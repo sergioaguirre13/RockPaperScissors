@@ -1,105 +1,109 @@
-﻿namespace RockPaperScissors
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace RockPaperScissors
 {
     public class Program
     {
         static void Main(string[] args)
         {
-            bool seguirJugando = true;
-            int seleccionUser = 0;
-            Random rnd = new Random();
-            int seleccionCpu = 0;
-            int contadorVictorias = 0;
+            bool continuar = true;
+            string opcionSeleccionada;
+            char seleccionUser;
+            char opcionrival;
+
+            Console.WriteLine("PIEDRA - PAPEL - TIJERA");
+
+            while (continuar)
+            {
+                opcionSeleccionada = OpcionSeleccionada();
+                seleccionUser = Char.Parse(opcionSeleccionada);
+
+                opcionrival = OpcionRival();
 
 
-            Console.WriteLine("Bienvenido a: Piedra, papel o tijera ");
-            
+                Console.WriteLine($"Opcion seleccionada de usuario: {seleccionUser}");
+                Console.WriteLine($"Opcion seleccionada de rival {opcionrival}");
 
+                DevolverGanador(seleccionUser, opcionrival);
 
-            while(seguirJugando)
+                Console.WriteLine("Seguir jugando?");
+                if (Console.ReadLine() != "si")
+                {
+                    continuar = false;
+                }
+
+            }
+
+            string OpcionSeleccionada()
             {
 
-                Console.WriteLine("(1) Piedra - (2) Papel - (3) Tijera");
-                seleccionUser = int.Parse(Console.ReadLine());
-                seleccionCpu = rnd.Next(1, 3);
+                Console.WriteLine("Elegi Piedra (R) - papel (P) o tijera (S)");
+                string seleccionUser = Console.ReadLine();
 
-                if (TurnoUser(seleccionUser, seleccionCpu))
+                if (seleccionUser?.ToLower() != "r" && seleccionUser?.ToLower() != "p" && seleccionUser?.ToLower() != "s")
                 {
-                    Console.WriteLine("User ha ganado");
-                    contadorVictorias++;
+                    Console.WriteLine("Por favor ingresa solo las letras: R - P - S");
+                    seleccionUser = OpcionSeleccionada();
+                }
+
+                return seleccionUser;
+            }
+
+            char OpcionRival()
+            {
+                char[] opciones = new char[] { 'r', 'p', 's' };
+
+                Random rnd = new Random();
+                int randomIndex = rnd.Next(0, opciones.Length);
+
+                return opciones[randomIndex];
+            }
+
+            void DevolverGanador(char seleccionUser, char seleccionRival)
+            {
+                if (seleccionUser == seleccionRival)
+                {
+                    Console.WriteLine("Es un empate");
                 }
                 else
                 {
-                    Console.WriteLine("User ha empatado o perdido");
+                    switch (seleccionUser)
+                    {
+                        case 'r':
+                            if (seleccionRival == 'p')
+                            {
+                                Console.WriteLine("Rival gana!");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Usuario gana!");
+                            }
+                            break;
+                        case 'p':
+                            if (seleccionRival == 's')
+                            {
+                                Console.WriteLine("Rival gana!");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Usuario gana!");
+                            }
+                            break;
+                        case 's':
+                            if (seleccionRival == 'r')
+                            {
+                                Console.WriteLine("Rival gana!");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Usuario gana!");
+                            }
+                            break;
+                    }
                 }
-               
 
-
-
-
-
-                Console.WriteLine("Seguir jugando?");
-                if (Console.ReadLine() == "no")
-                {
-                    seguirJugando = false;
-                }
+                
             }
-
-        }
-
-        public static bool TurnoUser(int eleccionUser,int eleccionCpu)
-        {
-            bool ganador = true;
-
-            switch (eleccionUser)
-            {
-                case 1:
-                    if (eleccionCpu == 1)
-                    {
-                        
-                        ganador = false;
-                        
-                    }
-                    else if (eleccionCpu == 2)
-                    {
-                        
-                        ganador = false;
-                    }
-                    else
-                    {
-                        ganador = true;
-                    }
-                    break;
-                case 2:
-                    if (eleccionCpu == 1)
-                    {
-                        ganador = true;
-                    }
-                    else if (eleccionCpu == 2)
-                    {
-                        ganador = false;
-                    }
-                    else
-                    {
-                        ganador = false;
-                    }
-                    break;
-                case 3:
-                    if (eleccionCpu == 1)
-                    {
-                        ganador = false;
-                    }
-                    else if (eleccionCpu == 2)
-                    {
-                        ganador = true;
-                    }
-                    else
-                    {
-                        ganador = false;
-                    }
-                    break;
-            }
-
-            return ganador;
 
         }
     }

@@ -10,6 +10,14 @@ namespace RockPaperScissors
     {
         string nombre;
         int puntaje;
-        
+
+        public Jugadores(string nombre, int puntaje)
+        {
+            this.Nombre = nombre;
+            this.Puntaje = puntaje;
+        }
+
+        public string Nombre { get => nombre; set => nombre = value; }
+        public int Puntaje { get => puntaje; set => puntaje = value; }
     }
 }

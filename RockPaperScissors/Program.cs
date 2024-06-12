@@ -6,10 +6,13 @@ namespace RockPaperScissors
     {
         static void Main(string[] args)
         {
+            
+
             bool continuar = true;
             string opcionSeleccionada;
             char seleccionUser;
             char opcionrival;
+            int contarVictorias = 0;
 
             Console.WriteLine("PIEDRA - PAPEL - TIJERA");
 
@@ -33,6 +36,8 @@ namespace RockPaperScissors
                 }
 
             }
+
+            Console.WriteLine($"Cantidad de victorias: {contarVictorias}");
 
             string OpcionSeleccionada()
             {
@@ -77,6 +82,7 @@ namespace RockPaperScissors
                             else
                             {
                                 Console.WriteLine("Usuario gana!");
+                                contarVictorias++;
                             }
                             break;
                         case 'p':
@@ -87,6 +93,8 @@ namespace RockPaperScissors
                             else
                             {
                                 Console.WriteLine("Usuario gana!");
+                                contarVictorias++;
+
                             }
                             break;
                         case 's':
@@ -97,6 +105,8 @@ namespace RockPaperScissors
                             else
                             {
                                 Console.WriteLine("Usuario gana!");
+                                contarVictorias++;
+
                             }
                             break;
                     }

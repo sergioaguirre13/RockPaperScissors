@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "RockPaperScissorsForm/1.0.0": {
+        "dependencies": {
+          "RockPaperScissors": "1.0.0"
+        },
+        "runtime": {
+          "RockPaperScissorsForm.dll": {}
+        }
+      },
+      "RockPaperScissors/1.0.0": {
+        "runtime": {
+          "RockPaperScissors.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RockPaperScissorsForm/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RockPaperScissors/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

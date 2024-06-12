@@ -6,15 +6,27 @@ namespace RockPaperScissors
     {
         static void Main(string[] args)
         {
-            
 
+            string nombreUser;
             bool continuar = true;
+            bool nuevoUser = true;
             string opcionSeleccionada;
             char seleccionUser;
             char opcionrival;
             int contarVictorias = 0;
+            List<Jugadores> listaJugadores = new List<Jugadores> ();
 
+
+            while (nuevoUser) 
+            {
+              Console.Clear();
             Console.WriteLine("PIEDRA - PAPEL - TIJERA");
+            Console.WriteLine("Escriba su nombre");
+            nombreUser = Console.ReadLine();
+
+                contarVictorias = 0;
+                continuar = true;
+
 
             while (continuar)
             {
@@ -37,7 +49,32 @@ namespace RockPaperScissors
 
             }
 
-            Console.WriteLine($"Cantidad de victorias: {contarVictorias}");
+            
+
+            Jugadores nuevoJugador = new Jugadores(nombreUser, contarVictorias);
+
+            listaJugadores.Add(nuevoJugador);
+
+                Console.WriteLine("Nuevo usuario?");
+                if (Console.ReadLine() != "si")
+                {
+                    nuevoUser = false;
+                }
+
+            }
+
+
+            Console.Clear();
+
+
+            ListaDePuntajes();
+
+            
+
+
+
+
+
 
             string OpcionSeleccionada()
             {
@@ -113,6 +150,19 @@ namespace RockPaperScissors
                 }
 
                 
+            }
+
+            void ListaDePuntajes()
+            {
+
+                Console.BackgroundColor = ConsoleColor.Green;
+                Console.ForegroundColor = ConsoleColor.Black;
+                Console.WriteLine("    P U N T A J E S   ");
+                foreach (Jugadores item in listaJugadores)
+                {
+                    Console.WriteLine(item.MostrarPuntajes());
+                }
+                Console.ResetColor();
             }
 
         }

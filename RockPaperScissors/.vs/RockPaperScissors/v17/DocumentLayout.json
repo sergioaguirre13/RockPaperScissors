@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\PC1\\OneDrive\\Documentos\\Sergio\\RockPaperScissors\\RockPaperScissors\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2202353C-3EF1-4671-9ACD-E5338583D57A}|RockPaperScissors.csproj|c:\\users\\pc1\\onedrive\\documentos\\sergio\\rockpaperscissors\\rockpaperscissors\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2202353C-3EF1-4671-9ACD-E5338583D57A}|RockPaperScissors.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2202353C-3EF1-4671-9ACD-E5338583D57A}|RockPaperScissors.csproj|C:\\Users\\PC1\\OneDrive\\Documentos\\Sergio\\RockPaperScissors\\RockPaperScissors\\jugadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2202353C-3EF1-4671-9ACD-E5338583D57A}|RockPaperScissors.csproj|solutionrelative:jugadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2202353C-3EF1-4671-9ACD-E5338583D57A}|RockPaperScissors.csproj|c:\\users\\pc1\\onedrive\\documentos\\sergio\\rockpaperscissors\\rockpaperscissors\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2202353C-3EF1-4671-9ACD-E5338583D57A}|RockPaperScissors.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Jugadores.cs",
               "DocumentMoniker": "C:\\Users\\PC1\\OneDrive\\Documentos\\Sergio\\RockPaperScissors\\RockPaperScissors\\Jugadores.cs",
               "RelativeDocumentMoniker": "Jugadores.cs",
               "ToolTip": "C:\\Users\\PC1\\OneDrive\\Documentos\\Sergio\\RockPaperScissors\\RockPaperScissors\\Jugadores.cs",
               "RelativeToolTip": "Jugadores.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABGAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-11T14:27:16.864Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\PC1\\OneDrive\\Documentos\\Sergio\\RockPaperScissors\\RockPaperScissors\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\PC1\\OneDrive\\Documentos\\Sergio\\RockPaperScissors\\RockPaperScissors\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAMAAAA",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAKkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-10T13:44:38.177Z",
               "EditorCaption": ""

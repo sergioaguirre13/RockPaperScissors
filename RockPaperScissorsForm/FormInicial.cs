@@ -21,6 +21,7 @@ namespace RockPaperScissorsForm
         {
             formJugar formJugar = new formJugar();
             formJugar.ShowDialog();
+            //update 13/06
         }
     }
 }

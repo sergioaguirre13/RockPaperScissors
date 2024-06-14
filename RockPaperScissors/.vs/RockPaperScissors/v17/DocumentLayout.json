@@ -3,21 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\PC1\\OneDrive\\Documentos\\Sergio\\RockPaperScissors\\RockPaperScissors\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{98BB4CD1-2B9C-477D-9586-48233E01445E}|..\\RockPaperScissorsForm\\RockPaperScissorsForm.csproj|c:\\users\\pc1\\onedrive\\documentos\\sergio\\rockpaperscissors\\rockpaperscissorsform\\formjugar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{98BB4CD1-2B9C-477D-9586-48233E01445E}|..\\RockPaperScissorsForm\\RockPaperScissorsForm.csproj|c:\\users\\pc1\\onedrive\\documentos\\sergio\\rockpaperscissors\\rockpaperscissorsform\\formjugar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98BB4CD1-2B9C-477D-9586-48233E01445E}|..\\RockPaperScissorsForm\\RockPaperScissorsForm.csproj|c:\\users\\pc1\\onedrive\\documentos\\sergio\\rockpaperscissors\\rockpaperscissorsform\\forminicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98BB4CD1-2B9C-477D-9586-48233E01445E}|..\\RockPaperScissorsForm\\RockPaperScissorsForm.csproj|c:\\users\\pc1\\onedrive\\documentos\\sergio\\rockpaperscissors\\rockpaperscissorsform\\forminicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2202353C-3EF1-4671-9ACD-E5338583D57A}|RockPaperScissors.csproj|c:\\users\\pc1\\onedrive\\documentos\\sergio\\rockpaperscissors\\rockpaperscissors\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2202353C-3EF1-4671-9ACD-E5338583D57A}|RockPaperScissors.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2202353C-3EF1-4671-9ACD-E5338583D57A}|RockPaperScissors.csproj|c:\\users\\pc1\\onedrive\\documentos\\sergio\\rockpaperscissors\\rockpaperscissors\\jugadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2202353C-3EF1-4671-9ACD-E5338583D57A}|RockPaperScissors.csproj|solutionrelative:jugadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2202353C-3EF1-4671-9ACD-E5338583D57A}|RockPaperScissors.csproj|c:\\users\\pc1\\onedrive\\documentos\\sergio\\rockpaperscissors\\rockpaperscissors\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2202353C-3EF1-4671-9ACD-E5338583D57A}|RockPaperScissors.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98BB4CD1-2B9C-477D-9586-48233E01445E}|..\\RockPaperScissorsForm\\RockPaperScissorsForm.csproj|c:\\users\\pc1\\onedrive\\documentos\\sergio\\rockpaperscissors\\rockpaperscissorsform\\forminicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98BB4CD1-2B9C-477D-9586-48233E01445E}|..\\RockPaperScissorsForm\\RockPaperScissorsForm.csproj|c:\\users\\pc1\\onedrive\\documentos\\sergio\\rockpaperscissors\\rockpaperscissorsform\\forminicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,11 +30,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PC1\\OneDrive\\Documentos\\Sergio\\RockPaperScissors\\RockPaperScissors\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\PC1\\OneDrive\\Documentos\\Sergio\\RockPaperScissors\\RockPaperScissors\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAAJgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T13:49:14.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "formJugar.cs",
+              "DocumentMoniker": "C:\\Users\\PC1\\OneDrive\\Documentos\\Sergio\\RockPaperScissors\\RockPaperScissorsForm\\formJugar.cs",
+              "RelativeDocumentMoniker": "..\\RockPaperScissorsForm\\formJugar.cs",
+              "ToolTip": "C:\\Users\\PC1\\OneDrive\\Documentos\\Sergio\\RockPaperScissors\\RockPaperScissorsForm\\formJugar.cs",
+              "RelativeToolTip": "..\\RockPaperScissorsForm\\formJugar.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAwwBoAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T13:31:58.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "formJugar.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\PC1\\OneDrive\\Documentos\\Sergio\\RockPaperScissors\\RockPaperScissorsForm\\formJugar.cs",
               "RelativeDocumentMoniker": "..\\RockPaperScissorsForm\\formJugar.cs",
@@ -43,20 +72,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "FormInicial.cs",
               "DocumentMoniker": "C:\\Users\\PC1\\OneDrive\\Documentos\\Sergio\\RockPaperScissors\\RockPaperScissorsForm\\FormInicial.cs",
               "RelativeDocumentMoniker": "..\\RockPaperScissorsForm\\FormInicial.cs",
               "ToolTip": "C:\\Users\\PC1\\OneDrive\\Documentos\\Sergio\\RockPaperScissors\\RockPaperScissorsForm\\FormInicial.cs",
               "RelativeToolTip": "..\\RockPaperScissorsForm\\FormInicial.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAjAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T14:48:46.749Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "FormInicial.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\PC1\\OneDrive\\Documentos\\Sergio\\RockPaperScissors\\RockPaperScissorsForm\\FormInicial.cs",
               "RelativeDocumentMoniker": "..\\RockPaperScissorsForm\\FormInicial.cs",
@@ -74,22 +103,10 @@
               "RelativeDocumentMoniker": "Jugadores.cs",
               "ToolTip": "C:\\Users\\PC1\\OneDrive\\Documentos\\Sergio\\RockPaperScissors\\RockPaperScissors\\Jugadores.cs",
               "RelativeToolTip": "Jugadores.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAoAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-11T14:27:16.864Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\PC1\\OneDrive\\Documentos\\Sergio\\RockPaperScissors\\RockPaperScissors\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\PC1\\OneDrive\\Documentos\\Sergio\\RockPaperScissors\\RockPaperScissors\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAAAKkAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T13:44:38.177Z"
             }
           ]
         }

@@ -13,7 +13,7 @@ namespace RockPaperScissorsForm
 {
     public partial class formJugar : Form
     {
-        Jugadores nuevoJugador;
+      //  Jugadores nuevoJugador;
         char SeleccionJugador;
         char SeleccionCpu;
         int contarVictorias = 0;
@@ -24,18 +24,49 @@ namespace RockPaperScissorsForm
         }
         private void formJugar_Load(object sender, EventArgs e)
         {
-            timer1.Start();
         }
 
+        #region BOTONES
         private void btnPiedra_Click(object sender, EventArgs e)
         {
-            SeleccionJugador = 'p';
+            SeleccionJugador = 'r';
+            
+
             SeleccionCpu = OpcionRival();
             MostrarSeleccionCpu();
+            DevolverGanador(SeleccionJugador, SeleccionCpu);
         }
 
+        private void btnPapel_Click(object sender, EventArgs e)
+        {
+            SeleccionJugador = 'p';
 
-        private char OpcionRival()
+            SeleccionCpu = OpcionRival();
+            MostrarSeleccionCpu();
+            DevolverGanador(SeleccionJugador, SeleccionCpu);
+
+        }
+
+        private void btnTijera_Click(object sender, EventArgs e)
+        {
+            SeleccionJugador = 's';
+           
+            SeleccionCpu = OpcionRival();
+            MostrarSeleccionCpu();
+            DevolverGanador(SeleccionJugador, SeleccionCpu);
+
+        }
+
+        #endregion
+
+
+
+        //falta agregar usuario --> adherirle cantidad de puntos (contarVictorias)
+      //  resolucion del partido
+
+
+        #region METODOS
+        private static char OpcionRival()
         {
             char[] opciones = new char[] { 'r', 'p', 's' };
 
@@ -46,20 +77,22 @@ namespace RockPaperScissorsForm
         }
         private void MostrarSeleccionCpu()
         {
-            switch (OpcionRival())
+            switch (SeleccionCpu)
             {
                 case 'r':
                     txbCpu.Text = "CPU HA ELEGIDO PIEDRA";
                     break;
-                case 'P':
+                case 'p':
                     txbCpu.Text = "CPU HA ELEGIDO PAPEL";
                     break;
-                case 'S':
+                case 's':
                     txbCpu.Text = "CPU HA ELEGIDO TIJERA";
+                    break;
+                default:
+                    txbCpu.Text = "probando probando";
                     break;
             }
         }
-       
 
         private void DevolverGanador(char seleccionUser, char seleccionRival)
         {
@@ -112,11 +145,9 @@ namespace RockPaperScissorsForm
 
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            DevolverGanador(SeleccionJugador, SeleccionCpu);
-            timer1.Stop();
-        }
+        #endregion
+
+
     }
 
 

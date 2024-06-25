@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formJugar));
             btnPiedra = new Button();
             btnPapel = new Button();
@@ -36,7 +35,6 @@
             lblNombre = new Label();
             tbxNombre = new TextBox();
             txbCpu = new TextBox();
-            timer1 = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // btnPiedra
@@ -61,6 +59,7 @@
             btnPapel.Size = new Size(95, 100);
             btnPapel.TabIndex = 3;
             btnPapel.UseVisualStyleBackColor = true;
+            btnPapel.Click += btnPapel_Click;
             // 
             // btnTijera
             // 
@@ -72,6 +71,7 @@
             btnTijera.Size = new Size(95, 100);
             btnTijera.TabIndex = 4;
             btnTijera.UseVisualStyleBackColor = true;
+            btnTijera.Click += btnTijera_Click;
             // 
             // lblNombre
             // 
@@ -97,14 +97,9 @@
             txbCpu.Location = new Point(44, 267);
             txbCpu.Multiline = true;
             txbCpu.Name = "txbCpu";
+            txbCpu.PlaceholderText = "Bienvenido usuario - Aqui veras la selección de la CPU";
             txbCpu.Size = new Size(343, 61);
             txbCpu.TabIndex = 7;
-            txbCpu.Text = "Bienvenido usuario - Aqui veras la selección de la CPU";
-            // 
-            // timer1
-            // 
-            timer1.Interval = 3000;
-            timer1.Tick += timer1_Tick;
             // 
             // formJugar
             // 
@@ -133,6 +128,5 @@
         private Label lblNombre;
         private TextBox tbxNombre;
         private TextBox txbCpu;
-        private System.Windows.Forms.Timer timer1;
     }
 }

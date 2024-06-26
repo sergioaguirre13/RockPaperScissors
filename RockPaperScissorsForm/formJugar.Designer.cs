@@ -32,9 +32,10 @@
             btnPiedra = new Button();
             btnPapel = new Button();
             btnTijera = new Button();
-            lblNombre = new Label();
-            tbxNombre = new TextBox();
+            lblBienvenidaNombre = new Label();
             txbCpu = new TextBox();
+            lblContadorVictorias = new Label();
+            lblNumeroVictorias = new Label();
             SuspendLayout();
             // 
             // btnPiedra
@@ -73,23 +74,16 @@
             btnTijera.UseVisualStyleBackColor = true;
             btnTijera.Click += btnTijera_Click;
             // 
-            // lblNombre
+            // lblBienvenidaNombre
             // 
-            lblNombre.AutoSize = true;
-            lblNombre.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblNombre.Location = new Point(133, 19);
-            lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(169, 25);
-            lblNombre.TabIndex = 5;
-            lblNombre.Text = "Ingrese su nombre";
-            // 
-            // tbxNombre
-            // 
-            tbxNombre.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tbxNombre.Location = new Point(133, 47);
-            tbxNombre.Name = "tbxNombre";
-            tbxNombre.Size = new Size(169, 29);
-            tbxNombre.TabIndex = 6;
+            lblBienvenidaNombre.AutoSize = true;
+            lblBienvenidaNombre.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblBienvenidaNombre.ForeColor = SystemColors.ButtonFace;
+            lblBienvenidaNombre.Location = new Point(61, 44);
+            lblBienvenidaNombre.Name = "lblBienvenidaNombre";
+            lblBienvenidaNombre.Size = new Size(326, 25);
+            lblBienvenidaNombre.TabIndex = 5;
+            lblBienvenidaNombre.Text = "Bienvenido nombre - hora de JUGAR!";
             // 
             // txbCpu
             // 
@@ -101,15 +95,38 @@
             txbCpu.Size = new Size(343, 61);
             txbCpu.TabIndex = 7;
             // 
+            // lblContadorVictorias
+            // 
+            lblContadorVictorias.AutoSize = true;
+            lblContadorVictorias.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblContadorVictorias.ForeColor = SystemColors.ButtonFace;
+            lblContadorVictorias.Location = new Point(92, 346);
+            lblContadorVictorias.Name = "lblContadorVictorias";
+            lblContadorVictorias.Size = new Size(249, 32);
+            lblContadorVictorias.TabIndex = 8;
+            lblContadorVictorias.Text = "TOTAL DE VICTORIAS: ";
+            // 
+            // lblNumeroVictorias
+            // 
+            lblNumeroVictorias.AutoSize = true;
+            lblNumeroVictorias.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblNumeroVictorias.ForeColor = SystemColors.ButtonFace;
+            lblNumeroVictorias.Location = new Point(166, 378);
+            lblNumeroVictorias.Name = "lblNumeroVictorias";
+            lblNumeroVictorias.Size = new Size(98, 32);
+            lblNumeroVictorias.TabIndex = 9;
+            lblNumeroVictorias.Text = "numero";
+            // 
             // formJugar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DimGray;
             ClientSize = new Size(427, 436);
+            Controls.Add(lblNumeroVictorias);
+            Controls.Add(lblContadorVictorias);
             Controls.Add(txbCpu);
-            Controls.Add(tbxNombre);
-            Controls.Add(lblNombre);
+            Controls.Add(lblBienvenidaNombre);
             Controls.Add(btnTijera);
             Controls.Add(btnPapel);
             Controls.Add(btnPiedra);
@@ -125,8 +142,9 @@
         private Button btnPiedra;
         private Button btnPapel;
         private Button btnTijera;
-        private Label lblNombre;
-        private TextBox tbxNombre;
+        private Label lblBienvenidaNombre;
         private TextBox txbCpu;
+        private Label lblContadorVictorias;
+        private Label lblNumeroVictorias;
     }
 }

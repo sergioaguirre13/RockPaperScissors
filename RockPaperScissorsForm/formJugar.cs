@@ -22,6 +22,12 @@ namespace RockPaperScissorsForm
         {
             InitializeComponent();
         }
+
+        public formJugar(Jugadores jugador)
+        {
+            //FALTARIA AGREGAR UNA INSTANCIA ACA ?
+
+        }
         private void formJugar_Load(object sender, EventArgs e)
         {
         }

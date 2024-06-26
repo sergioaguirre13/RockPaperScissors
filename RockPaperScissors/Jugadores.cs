@@ -12,7 +12,6 @@ namespace RockPaperScissors
         int puntaje;
 
         
-
         public Jugadores(string nombre) 
         {
             this.Nombre = nombre;

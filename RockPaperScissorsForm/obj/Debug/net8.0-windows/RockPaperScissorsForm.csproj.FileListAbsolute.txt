@@ -24,3 +24,4 @@ C:\Users\PC1\OneDrive\Documentos\Sergio\RockPaperScissors\RockPaperScissorsForm\
 C:\Users\PC1\OneDrive\Documentos\Sergio\RockPaperScissors\RockPaperScissorsForm\obj\Debug\net8.0-windows\ref\RockPaperScissorsForm.dll
 C:\Users\PC1\OneDrive\Documentos\Sergio\RockPaperScissors\RockPaperScissorsForm\obj\Debug\net8.0-windows\RockPaperScissorsForm.formJugar.resources
 C:\Users\PC1\OneDrive\Documentos\Sergio\RockPaperScissors\RockPaperScissorsForm\obj\Debug\net8.0-windows\RockPaperScissorsForm.Properties.Resources.resources
+C:\Users\PC1\OneDrive\Documentos\Sergio\RockPaperScissors\RockPaperScissorsForm\obj\Debug\net8.0-windows\RockPaperScissorsForm.FormsIngresoNombre.resources

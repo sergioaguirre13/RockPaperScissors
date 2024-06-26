@@ -19,9 +19,11 @@ namespace RockPaperScissorsForm
 
         private void btnEmpezar_Click(object sender, EventArgs e)
         {
-            formJugar formJugar = new formJugar();
-            formJugar.ShowDialog();
-            //update 13/06
+            FormsIngresoNombre formIngreso = new FormsIngresoNombre();
+            formIngreso.ShowDialog();
+
+
+          
         }
     }
 }

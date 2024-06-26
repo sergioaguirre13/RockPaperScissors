@@ -13,23 +13,22 @@ namespace RockPaperScissorsForm
 {
     public partial class formJugar : Form
     {
-      //  Jugadores nuevoJugador;
+        string nombreJugador;
         char SeleccionJugador;
         char SeleccionCpu;
         int contarVictorias = 0;
 
-        public formJugar()
-        {
-            InitializeComponent();
-        }
-
         public formJugar(Jugadores jugador)
         {
-            //FALTARIA AGREGAR UNA INSTANCIA ACA ?
-
+            InitializeComponent();
+            nombreJugador = jugador.Nombre;
         }
+
+       
         private void formJugar_Load(object sender, EventArgs e)
         {
+            lblBienvenidaNombre.Text = $"Bievenido {nombreJugador} - EMPECEMOS A JUGAR! ";
+            lblContadorVictorias.Text = contarVictorias.ToString();
         }
 
         #region BOTONES
@@ -67,8 +66,7 @@ namespace RockPaperScissorsForm
 
 
 
-        //falta agregar usuario --> adherirle cantidad de puntos (contarVictorias)
-      //  resolucion del partido
+        /* Hay que guardar los datos del Usuario y su puntaje para que se vea en el grid del principio */
 
 
         #region METODOS
@@ -117,8 +115,10 @@ namespace RockPaperScissorsForm
                         }
                         else
                         {
-                            MessageBox.Show("USUARIO GANA!");
+                            MessageBox.Show($"{nombreJugador} GANA!");
                             contarVictorias++;
+                            lblContadorVictorias.Text = contarVictorias.ToString();
+
                         }
                         break;
                     case 'p':
@@ -128,8 +128,10 @@ namespace RockPaperScissorsForm
                         }
                         else
                         {
-                            MessageBox.Show("USUARIO GANA!");
+                            MessageBox.Show($"{nombreJugador} GANA!");
                             contarVictorias++;
+                            lblContadorVictorias.Text = contarVictorias.ToString();
+
 
                         }
                         break;
@@ -140,8 +142,10 @@ namespace RockPaperScissorsForm
                         }
                         else
                         {
-                            MessageBox.Show("USUARIO GANA!");
+                            MessageBox.Show($"{nombreJugador} GANA!");
                             contarVictorias++;
+                            lblContadorVictorias.Text = contarVictorias.ToString();
+
 
                         }
                         break;

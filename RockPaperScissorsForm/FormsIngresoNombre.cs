@@ -29,10 +29,10 @@ namespace RockPaperScissorsForm
             nombreJugador = tbxNombre.Text;
             nuevoJugador = new Jugadores(nombreJugador);
 
-
-
             formJugar formJugar = new formJugar(nuevoJugador);
             formJugar.ShowDialog();
+
+            
         }
     }
 }

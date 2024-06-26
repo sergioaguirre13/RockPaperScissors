@@ -34,8 +34,8 @@
             btnTijera = new Button();
             lblBienvenidaNombre = new Label();
             txbCpu = new TextBox();
+            lblTotalVictorias = new Label();
             lblContadorVictorias = new Label();
-            lblNumeroVictorias = new Label();
             SuspendLayout();
             // 
             // btnPiedra
@@ -95,27 +95,27 @@
             txbCpu.Size = new Size(343, 61);
             txbCpu.TabIndex = 7;
             // 
+            // lblTotalVictorias
+            // 
+            lblTotalVictorias.AutoSize = true;
+            lblTotalVictorias.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTotalVictorias.ForeColor = SystemColors.ButtonFace;
+            lblTotalVictorias.Location = new Point(92, 346);
+            lblTotalVictorias.Name = "lblTotalVictorias";
+            lblTotalVictorias.Size = new Size(249, 32);
+            lblTotalVictorias.TabIndex = 8;
+            lblTotalVictorias.Text = "TOTAL DE VICTORIAS: ";
+            // 
             // lblContadorVictorias
             // 
             lblContadorVictorias.AutoSize = true;
             lblContadorVictorias.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblContadorVictorias.ForeColor = SystemColors.ButtonFace;
-            lblContadorVictorias.Location = new Point(92, 346);
+            lblContadorVictorias.Location = new Point(166, 378);
             lblContadorVictorias.Name = "lblContadorVictorias";
-            lblContadorVictorias.Size = new Size(249, 32);
-            lblContadorVictorias.TabIndex = 8;
-            lblContadorVictorias.Text = "TOTAL DE VICTORIAS: ";
-            // 
-            // lblNumeroVictorias
-            // 
-            lblNumeroVictorias.AutoSize = true;
-            lblNumeroVictorias.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblNumeroVictorias.ForeColor = SystemColors.ButtonFace;
-            lblNumeroVictorias.Location = new Point(166, 378);
-            lblNumeroVictorias.Name = "lblNumeroVictorias";
-            lblNumeroVictorias.Size = new Size(98, 32);
-            lblNumeroVictorias.TabIndex = 9;
-            lblNumeroVictorias.Text = "numero";
+            lblContadorVictorias.Size = new Size(98, 32);
+            lblContadorVictorias.TabIndex = 9;
+            lblContadorVictorias.Text = "numero";
             // 
             // formJugar
             // 
@@ -123,8 +123,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DimGray;
             ClientSize = new Size(427, 436);
-            Controls.Add(lblNumeroVictorias);
             Controls.Add(lblContadorVictorias);
+            Controls.Add(lblTotalVictorias);
             Controls.Add(txbCpu);
             Controls.Add(lblBienvenidaNombre);
             Controls.Add(btnTijera);
@@ -144,7 +144,7 @@
         private Button btnTijera;
         private Label lblBienvenidaNombre;
         private TextBox txbCpu;
+        private Label lblTotalVictorias;
         private Label lblContadorVictorias;
-        private Label lblNumeroVictorias;
     }
 }

@@ -13,75 +13,57 @@ namespace RockPaperScissorsForm
 {
     public partial class formJugar : Form
     {
-        string nombreJugador;
-        char SeleccionJugador;
-        char SeleccionCpu;
-        int contarVictorias = 0;
+        private Jugadores nuevoJugador;
+        private int contarVictorias = 0;
 
         public formJugar(Jugadores jugador)
         {
             InitializeComponent();
-            nombreJugador = jugador.Nombre;
+            nuevoJugador = jugador;
         }
 
-       
         private void formJugar_Load(object sender, EventArgs e)
         {
-            lblBienvenidaNombre.Text = $"Bievenido {nombreJugador} - EMPECEMOS A JUGAR! ";
+            lblBienvenidaNombre.Text = $"Bievenido {nuevoJugador.Nombre} - EMPECEMOS A JUGAR! ";
             lblContadorVictorias.Text = contarVictorias.ToString();
         }
 
         #region BOTONES
         private void btnPiedra_Click(object sender, EventArgs e)
         {
-            SeleccionJugador = 'r';
-            
-
-            SeleccionCpu = OpcionRival();
-            MostrarSeleccionCpu();
-            DevolverGanador(SeleccionJugador, SeleccionCpu);
+            Jugar('r');
         }
 
         private void btnPapel_Click(object sender, EventArgs e)
         {
-            SeleccionJugador = 'p';
-
-            SeleccionCpu = OpcionRival();
-            MostrarSeleccionCpu();
-            DevolverGanador(SeleccionJugador, SeleccionCpu);
-
+            Jugar('p');
         }
 
         private void btnTijera_Click(object sender, EventArgs e)
         {
-            SeleccionJugador = 's';
-           
-            SeleccionCpu = OpcionRival();
-            MostrarSeleccionCpu();
-            DevolverGanador(SeleccionJugador, SeleccionCpu);
-
+            Jugar('s');
         }
 
         #endregion
 
-
-
-        /* Hay que guardar los datos del Usuario y su puntaje para que se vea en el grid del principio */
-
-
         #region METODOS
+        private void Jugar(char seleccionJugador)
+        {
+            char seleccionCpu = OpcionRival();
+            MostrarSeleccionCpu(seleccionCpu);
+            DevolverGanador(seleccionJugador, seleccionCpu);
+        }
+
         private static char OpcionRival()
         {
-            char[] opciones = new char[] { 'r', 'p', 's' };
-
+            char[] opciones = { 'r', 'p', 's' };
             Random rnd = new Random();
-            int randomIndex = rnd.Next(0, opciones.Length);
-
-            return opciones[randomIndex];
+            return opciones[rnd.Next(opciones.Length)];
         }
-        private void MostrarSeleccionCpu()
+
+        private void MostrarSeleccionCpu(char seleccionCpu)
         {
-            switch (SeleccionCpu)
+            switch (seleccionCpu)
             {
                 case 'r':
                     txbCpu.Text = "CPU HA ELEGIDO PIEDRA";
@@ -92,74 +74,41 @@ namespace RockPaperScissorsForm
                 case 's':
                     txbCpu.Text = "CPU HA ELEGIDO TIJERA";
                     break;
-                default:
-                    txbCpu.Text = "probando probando";
-                    break;
             }
         }
 
-        private void DevolverGanador(char seleccionUser, char seleccionRival)
+        private void DevolverGanador(char seleccionUser, char seleccionCpu)
         {
-            if (seleccionUser == seleccionRival)
+            if (seleccionUser == seleccionCpu)
             {
                 MessageBox.Show("Es un empate!");
             }
             else
             {
-                switch (seleccionUser)
+                bool userWins = (seleccionUser == 'r' && seleccionCpu == 's') ||
+                                (seleccionUser == 'p' && seleccionCpu == 'r') ||
+                                (seleccionUser == 's' && seleccionCpu == 'p');
+
+                if (userWins)
                 {
-                    case 'r':
-                        if (seleccionRival == 'p')
-                        {
-                            MessageBox.Show("CPU GANA!");
-                        }
-                        else
-                        {
-                            MessageBox.Show($"{nombreJugador} GANA!");
-                            contarVictorias++;
-                            lblContadorVictorias.Text = contarVictorias.ToString();
-
-                        }
-                        break;
-                    case 'p':
-                        if (seleccionRival == 's')
-                        {
-                            MessageBox.Show("CPU GANA!");
-                        }
-                        else
-                        {
-                            MessageBox.Show($"{nombreJugador} GANA!");
-                            contarVictorias++;
-                            lblContadorVictorias.Text = contarVictorias.ToString();
-
-
-                        }
-                        break;
-                    case 's':
-                        if (seleccionRival == 'r')
-                        {
-                            MessageBox.Show("CPU GANA!");
-                        }
-                        else
-                        {
-                            MessageBox.Show($"{nombreJugador} GANA!");
-                            contarVictorias++;
-                            lblContadorVictorias.Text = contarVictorias.ToString();
-
-
-                        }
-                        break;
+                    MessageBox.Show($"{nuevoJugador.Nombre} GANA!");
+                    contarVictorias++;
+                    lblContadorVictorias.Text = contarVictorias.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("CPU GANA!");
                 }
             }
+        }
 
-
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            nuevoJugador.Puntaje = contarVictorias;
+            DialogResult = DialogResult.OK;
+            this.Close();
         }
 
         #endregion
-
-
     }
-
-
-
 }

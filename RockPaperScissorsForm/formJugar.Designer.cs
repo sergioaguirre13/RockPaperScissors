@@ -36,6 +36,7 @@
             txbCpu = new TextBox();
             lblTotalVictorias = new Label();
             lblContadorVictorias = new Label();
+            btnSalir = new Button();
             SuspendLayout();
             // 
             // btnPiedra
@@ -88,7 +89,7 @@
             // txbCpu
             // 
             txbCpu.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txbCpu.Location = new Point(44, 267);
+            txbCpu.Location = new Point(44, 237);
             txbCpu.Multiline = true;
             txbCpu.Name = "txbCpu";
             txbCpu.PlaceholderText = "Bienvenido usuario - Aqui veras la selección de la CPU";
@@ -100,7 +101,7 @@
             lblTotalVictorias.AutoSize = true;
             lblTotalVictorias.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblTotalVictorias.ForeColor = SystemColors.ButtonFace;
-            lblTotalVictorias.Location = new Point(92, 346);
+            lblTotalVictorias.Location = new Point(100, 310);
             lblTotalVictorias.Name = "lblTotalVictorias";
             lblTotalVictorias.Size = new Size(249, 32);
             lblTotalVictorias.TabIndex = 8;
@@ -111,11 +112,21 @@
             lblContadorVictorias.AutoSize = true;
             lblContadorVictorias.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblContadorVictorias.ForeColor = SystemColors.ButtonFace;
-            lblContadorVictorias.Location = new Point(166, 378);
+            lblContadorVictorias.Location = new Point(174, 342);
             lblContadorVictorias.Name = "lblContadorVictorias";
             lblContadorVictorias.Size = new Size(98, 32);
             lblContadorVictorias.TabIndex = 9;
             lblContadorVictorias.Text = "numero";
+            // 
+            // btnSalir
+            // 
+            btnSalir.Location = new Point(129, 385);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(186, 39);
+            btnSalir.TabIndex = 10;
+            btnSalir.Text = "SALIR";
+            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
             // 
             // formJugar
             // 
@@ -123,6 +134,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DimGray;
             ClientSize = new Size(427, 436);
+            Controls.Add(btnSalir);
             Controls.Add(lblContadorVictorias);
             Controls.Add(lblTotalVictorias);
             Controls.Add(txbCpu);
@@ -146,5 +158,6 @@
         private TextBox txbCpu;
         private Label lblTotalVictorias;
         private Label lblContadorVictorias;
+        private Button btnSalir;
     }
 }

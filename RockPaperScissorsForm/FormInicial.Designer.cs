@@ -48,6 +48,7 @@
             // 
             // dtvListaJugadores
             // 
+            dtvListaJugadores.AllowUserToOrderColumns = true;
             dtvListaJugadores.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtvListaJugadores.Location = new Point(52, 147);
             dtvListaJugadores.Name = "dtvListaJugadores";

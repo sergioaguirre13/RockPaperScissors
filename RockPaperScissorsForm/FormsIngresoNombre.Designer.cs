@@ -60,7 +60,6 @@
             Controls.Add(btnCargarNombre);
             Name = "FormsIngresoNombre";
             Text = "FormsIngresoNombre";
-            Load += FormsIngresoNombre_Load;
             ResumeLayout(false);
             PerformLayout();
         }

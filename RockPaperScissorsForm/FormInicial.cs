@@ -4,15 +4,16 @@ namespace RockPaperScissorsForm
 {
     public partial class FormInicial : Form
     {
-        List<Jugadores> listaJugadores;
+        private List<Jugadores> listaJugadores;
+
         public FormInicial()
         {
             InitializeComponent();
+            listaJugadores = new List<Jugadores>();
         }
 
         private void FormInicial_Load(object sender, EventArgs e)
         {
-            listaJugadores = new List<Jugadores>();
             dtvListaJugadores.DataSource = null;
             dtvListaJugadores.DataSource = listaJugadores;
         }
@@ -20,10 +21,15 @@ namespace RockPaperScissorsForm
         private void btnEmpezar_Click(object sender, EventArgs e)
         {
             FormsIngresoNombre formIngreso = new FormsIngresoNombre();
-            formIngreso.ShowDialog();
+            if (formIngreso.ShowDialog() == DialogResult.OK)
+            {
+                Jugadores nuevoJugador = formIngreso.NuevoJugador;
+                listaJugadores.Add(nuevoJugador);
 
-
-          
+                dtvListaJugadores.DataSource = null;
+                dtvListaJugadores.DataSource = listaJugadores;
+            }
         }
     }
 }
+

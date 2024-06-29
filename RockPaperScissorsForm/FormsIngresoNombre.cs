@@ -11,28 +11,28 @@ using System.Windows.Forms;
 
 namespace RockPaperScissorsForm
 {
-    public partial class FormsIngresoNombre : Form
-    {
-        Jugadores nuevoJugador;
-        string nombreJugador = string.Empty;
-        public FormsIngresoNombre()
+   
+        public partial class FormsIngresoNombre : Form
         {
-            InitializeComponent();
-        }
+            public Jugadores NuevoJugador { get; private set; }
 
-        private void FormsIngresoNombre_Load(object sender, EventArgs e)
-        {
-        }
+            public FormsIngresoNombre()
+            {
+                InitializeComponent();
+            }
 
-        private void btnCargarNombre_Click(object sender, EventArgs e)
-        {
-            nombreJugador = tbxNombre.Text;
-            nuevoJugador = new Jugadores(nombreJugador);
+            private void btnCargarNombre_Click(object sender, EventArgs e)
+            {
+                string nombreJugador = tbxNombre.Text;
+                NuevoJugador = new Jugadores(nombreJugador);
 
-            formJugar formJugar = new formJugar(nuevoJugador);
-            formJugar.ShowDialog();
+                formJugar formJugar = new formJugar(NuevoJugador);
+                formJugar.ShowDialog();
 
-            
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
         }
     }
-}
+
+

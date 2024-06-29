@@ -3,10 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\PC1\\OneDrive\\Documentos\\Sergio\\RockPaperScissors\\RockPaperScissors\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{98BB4CD1-2B9C-477D-9586-48233E01445E}|..\\RockPaperScissorsForm\\RockPaperScissorsForm.csproj|c:\\users\\pc1\\onedrive\\documentos\\sergio\\rockpaperscissors\\rockpaperscissorsform\\formjugar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98BB4CD1-2B9C-477D-9586-48233E01445E}|..\\RockPaperScissorsForm\\RockPaperScissorsForm.csproj|c:\\users\\pc1\\onedrive\\documentos\\sergio\\rockpaperscissors\\rockpaperscissorsform\\formjugar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{98BB4CD1-2B9C-477D-9586-48233E01445E}|..\\RockPaperScissorsForm\\RockPaperScissorsForm.csproj|c:\\users\\pc1\\onedrive\\documentos\\sergio\\rockpaperscissors\\rockpaperscissorsform\\forminicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -16,32 +13,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "formJugar.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\PC1\\OneDrive\\Documentos\\Sergio\\RockPaperScissors\\RockPaperScissorsForm\\formJugar.cs",
-              "RelativeDocumentMoniker": "..\\RockPaperScissorsForm\\formJugar.cs",
-              "ToolTip": "C:\\Users\\PC1\\OneDrive\\Documentos\\Sergio\\RockPaperScissors\\RockPaperScissorsForm\\formJugar.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\RockPaperScissorsForm\\formJugar.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T14:40:18.214Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "formJugar.cs",
-              "DocumentMoniker": "C:\\Users\\PC1\\OneDrive\\Documentos\\Sergio\\RockPaperScissors\\RockPaperScissorsForm\\formJugar.cs",
-              "RelativeDocumentMoniker": "..\\RockPaperScissorsForm\\formJugar.cs",
-              "ToolTip": "C:\\Users\\PC1\\OneDrive\\Documentos\\Sergio\\RockPaperScissors\\RockPaperScissorsForm\\formJugar.cs",
-              "RelativeToolTip": "..\\RockPaperScissorsForm\\formJugar.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAJ4AAAAAAAAA",
+              "Title": "FormInicial.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\PC1\\OneDrive\\Documentos\\Sergio\\RockPaperScissors\\RockPaperScissorsForm\\FormInicial.cs",
+              "RelativeDocumentMoniker": "..\\RockPaperScissorsForm\\FormInicial.cs",
+              "ToolTip": "C:\\Users\\PC1\\OneDrive\\Documentos\\Sergio\\RockPaperScissors\\RockPaperScissorsForm\\FormInicial.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\RockPaperScissorsForm\\FormInicial.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T13:31:58.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-29T13:33:47.191Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }
